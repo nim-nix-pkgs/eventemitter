@@ -11,7 +11,6 @@
   inputs.src-eventemitter-master.ref   = "refs/heads/master";
   inputs.src-eventemitter-master.owner = "al-bimani";
   inputs.src-eventemitter-master.repo  = "eventemitter";
-  inputs.src-eventemitter-master.dir   = "";
   inputs.src-eventemitter-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
