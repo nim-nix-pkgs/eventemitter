@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."eventemitter-master".dir   = "master";
-  inputs."eventemitter-master".owner = "nim-nix-pkgs";
-  inputs."eventemitter-master".ref   = "master";
-  inputs."eventemitter-master".repo  = "eventemitter";
-  inputs."eventemitter-master".type  = "github";
-  inputs."eventemitter-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."eventemitter-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
